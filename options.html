@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display: block; margin: 10px 0; }
+    input, textarea { width: 100%; padding: 5px; box-sizing: border-box; }
+    button { margin-top: 20px; padding: 10px 20px; }
+  </style>
+</head>
+<body>
+  <form id="settings-form">
+    <label>Extension timer from (minutes): <input type="number" id="ext-from" min="1"></label>
+    <label>Extension timer to (minutes): <input type="number" id="ext-to" min="1"></label>
+    <label>Popup timer (seconds): <input type="number" id="popup-timer" min="1"></label>
+    <label>Exercises (comma-separated): <textarea id="exercises"></textarea></label>
+    <label>Exercise count from: <input type="number" id="count-from" min="1"></label>
+    <label>Exercise count to: <input type="number" id="count-to" min="1"></label>
+    <label>Trigger chance (0–100): <input type="number" id="chance" min="0" max="100"></label>
+    <label>Password: <input type="text" id="password"></label>
+    <button type="submit">Save</button>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
